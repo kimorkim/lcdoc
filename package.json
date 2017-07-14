@@ -2,9 +2,9 @@
   "name": "lcdoc",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "index2.js",
   "bin": {
-    "lcdoc": "index.js"
+    "lcdoc": "index2.js"
   },
   "prefreGlobal": true,
   "scripts": {
