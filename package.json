@@ -1,0 +1,23 @@
+{
+  "name": "lcdoc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "lcdoc": "index.js"
+  },
+  "prefreGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lincense"
+  ],
+  "author": "kimorkim@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "license-checker": "^12.1.0",
+    "nlf": "^2.0.0"
+  }
+}
