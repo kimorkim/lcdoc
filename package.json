@@ -18,5 +18,9 @@
   "dependencies": {
     "commander": "^2.11.0",
     "nlf": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimorkim/lcdoc.git"
   }
 }
