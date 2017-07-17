@@ -5,14 +5,31 @@
 ## Installation
 
 ```sh
-$ npm install --save lcdoc
+$ npm install --global lcdoc
 ```
 
 ## Usage
 
-```js
-var lcdoc = require('lcdoc');
-lcdoc();
+```bash
+  lcdoc make
+```
+
+```bash
+Usage: lcdoc [options] [command]
+
+
+Options:
+
+  -V, --version           output the version number
+  -o, --out <path>        write the data to a specific file.
+  -i, --ignore <pattern>  write the path to ignore.
+  -d, --depth <number>    how deep to traverse packages where 0 is the current package.json only
+  -h, --help              output usage information
+
+
+Commands:
+
+  make [path]
 ```
 
 ## License
