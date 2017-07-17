@@ -11,7 +11,7 @@ $ npm install --global lcdoc
 ## Usage
 
 ```bash
-  lcdoc make
+lcdoc make
 ```
 
 ```bash
