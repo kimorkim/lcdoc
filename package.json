@@ -1,7 +1,7 @@
 {
   "name": "lcdoc",
   "version": "0.0.1",
-  "description": "",
+  "description": "> The module that creates the license information that you use.",
   "main": "index.js",
   "bin": {
     "lcdoc": "index.js"
@@ -21,6 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimorkim/lcdoc.git"
-  }
+    "url": "git+https://github.com/kimorkim/lcdoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimorkim/lcdoc/issues"
+  },
+  "homepage": "https://github.com/kimorkim/lcdoc#readme",
+  "devDependencies": {}
 }
