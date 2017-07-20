@@ -1,6 +1,6 @@
 {
   "name": "lcdoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> The module that creates the license information that you use.",
   "main": "index.js",
   "bin": {
