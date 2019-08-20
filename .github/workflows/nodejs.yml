@@ -23,5 +23,5 @@ jobs:
         pwd
         ls
         git --version
-        chmod +x ./text.sh
+        chmod +x ./test.sh
         ./test.sh
