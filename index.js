@@ -5,6 +5,8 @@ const nlf = require('nlf');
 const path = require('path');
 const fs = require('fs');
 
+const ignoreLicenceFileExtension = ['.tsx', '.jsx', '.html', '.js', '.ts'];
+
 function appender(xs) {
     xs = xs || [];
     return function(x) {
@@ -46,8 +48,6 @@ program
                     const pSource = package.sources || [];
                     const lSource = license.sources || [];
 
-                    let licenseUrl = '';
-
                     pSource.forEach((p) => {
                         textList.push(`License: ${p.license}`);
                         if (p.url) {
@@ -56,12 +56,12 @@ program
                     });
 
                     lSource.forEach((l) => {
-                        if(ignorePaths && ignorePaths.some((i)=> {
-                            var a = path.resolve(workingPath, i);
+                        if(ignoreLicenceFileExtension.includes(path.extname(l.filePath)) || (ignorePaths && ignorePaths.some((i)=> {
+                            const a = path.resolve(workingPath, i);
                             if(l.filePath.indexOf(a) > -1) {
                                 return true;
                             }
-                        })) {
+                        }))) {
                             return;
                         }
 
